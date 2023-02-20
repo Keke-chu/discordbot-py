@@ -22,8 +22,8 @@ async def on_message(message):
     if message.content == f'{PREFIX}call':
         await message.channel.send("callback!")
 
-    if message.content.startswith(f'{PREFIX}hello'):
-        await message.channel.send('Hello!')
+    if message.content.startswith(f'{PREFIX}케이루'):
+        await message.channel.send('안녕하세요?')
 
 
 try:
