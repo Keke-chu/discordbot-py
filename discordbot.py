@@ -19,8 +19,8 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content == f'{PREFIX}call':
-        await message.channel.send("callback!")
+    if message.content == f'{PREFIX}양지윤':
+        await message.channel.send("바보")
 
     if message.content.startswith(f'{PREFIX}케이루'):
         await message.channel.send('안녕하세요?')
