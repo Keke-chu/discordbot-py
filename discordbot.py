@@ -25,7 +25,11 @@ async def on_message(message):
     if message.content.startswith(f'{PREFIX}케이루'):
         await message.channel.send('안녕하세요?')
 
-
+@bot.command()
+async def play(ctx):
+    channel = ctx.author.voice.channel
+    await channel.connect()
+    
 try:
     client.run(TOKEN)
 except discord.errors.LoginFailure as e:
