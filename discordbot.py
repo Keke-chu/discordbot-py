@@ -26,9 +26,12 @@ async def on_message(message):
         await message.channel.send('안녕하세요?')
 
 @bot.command()
-async def play(ctx):
-    channel = ctx.author.voice.channel
-    await channel.connect()
+async def join(ctx)
+	if ctx.author.voice and ctx.author.voice.channel:
+    	channel = ctx.author.voice.channel
+    	await channel.connect()
+    else:
+    	await ctx.send("음성채널 없음")
     
 try:
     client.run(TOKEN)
