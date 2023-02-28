@@ -44,8 +44,8 @@ async def on_message(message):
     if message.content == f'{PREFIX}양지윤':
         await message.channel.send("멍청이")
 
-    if message.content.startswith(f'{PREFIX}케이루'):
-        await message.channel.send('안녕하세요?')
+    if message.content.startswith(f'{PREFIX}추승우'):
+        await message.channel.send('개쩌는슈퍼스타')
 
     
 try:
